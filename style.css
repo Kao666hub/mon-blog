@@ -1,0 +1,183 @@
+/* Style général */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fond clair et neutre */
+    color: #333; /* Couleur principale du texte */
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300; /* Police fine et moderne */
+    margin: 0;
+}
+
+/* Menu de navigation principal */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition fluide pour couleur et taille */
+}
+
+nav ul li a:hover {
+    color: #ff5733; /* Changement de couleur plus vif au survol */
+    transform: scale(1.2); /* Agrandir plus fortement le lien au survol */
+}
+
+/* Menu des catégories */
+#menu-categories {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#menu-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-categories ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#menu-categories ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition fluide pour couleur et soulèvement */
+}
+
+#menu-categories ul li a:hover {
+    color: #ff5733; /* Couleur plus vive au survol */
+    transform: translateY(-8px); /* Soulèvement plus fort */
+}
+
+/* Articles récents */
+#articles-recents {
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Effet d'élévation et ombre sur les articles récents */
+article {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre par défaut */
+    border-radius: 10px;
+    flex: 1 1 300px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transition plus longue pour un effet plus fluide */
+    animation: fadeInUp 1s ease forwards; /* Animation d'apparition plus longue */
+}
+
+article:hover {
+    transform: translateY(-20px); /* L'article se soulève plus nettement */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Ombre plus forte au survol */
+}
+
+article h3 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: normal; /* Pas de gras */
+}
+
+article p {
+    color: #555;
+}
+
+/* Section À propos */
+#a-propos {
+    padding: 40px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#a-propos h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333;
+}
+
+/* Pied de page */
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    font-weight: 300;
+}
+
+footer a {
+    color: #ff5733;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Transition fluide pour le survol */
+}
+
+footer a:hover {
+    color: #c70039; /* Changement de couleur plus marqué au survol */
+}
+
+/* Animation d'apparition pour les articles */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Commence plus bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Reprend sa position normale */
+    }
+}
+
+/* Responsive design pour mobile */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #articles-recents {
+        display: block;
+    }
+
+    article {
+        margin-bottom: 20px;
+    }
+}
