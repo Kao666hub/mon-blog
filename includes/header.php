@@ -1,4 +1,5 @@
 <!-- includes/header.php -->
+
 <header>
     <h1>Chaos</h1>
     <nav>
@@ -11,9 +12,9 @@
     <!-- Menu des catégories d'articles -->
     <nav id="menu-categories">
         <ul>
-            <li><a href="fictifs.php">Mondes Fictifs</a></li>
-            <li><a href="cours.php">Cours Élaborés</a></li>
-            <li><a href="reflexions.php">Vie Terrienne</a></li>
+        <li><a href="?category=Mondes Fictifs">Mondes Fictifs</a></li>
+        <li><a href="?category=Cours Élaborés">Cours Élaborés</a></li>
+        <li><a href="?category=Vie Terrienne">Vie Terrienne</a></li>
         </ul>
     </nav>
 </header>
